@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basic of java script</title>
+  <script type="text/javascript" src="basic.js"></script>
+</head>
+
+<body>
+  <h1>hello world</h1>
+  <p>hiiiiiii friends</p>
+  <script>
+
+    function validateform() {
+      let a = document.forms["myform"]["form"].value;
+
+      if (a == "null" || a == "") {
+        alert("name can't be blank");
+      }
+      let b = document.forms["myform"]["pass"].value;
+      if (b.length < 6) {
+        alert("password should have at least 5 long");
+      }
+
+    }
+
+  </script>
+  <form name="myform" >
+    name:<input type="text" name="form"><br>
+    password:<input type="password" name="pass"><br>
+    <button onmouseover="validateform()" name="pass" style="color: blue;">submit</button>
+  </form>
+  <div onmouseover="mOver(this)";
+  onmouseout="mOut(this)";
+  style="background-color: chocolate; color: blue; height: 200px; width: 20%; text-align: center; padding: 30px 30px;">mouse on me</div>
+<script>
+function mOver(obj)
+{
+obj.innerHTML="on mouse over";
+}
+function mOut(obj)
+{
+  obj.innerHTML="on mouse out";
+}
+
+
+
+
+</script>
+  
+</body>
+
+</html>
